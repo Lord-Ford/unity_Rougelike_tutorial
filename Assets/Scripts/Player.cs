@@ -50,7 +50,7 @@ public class Player : MovingObject {
 
 		if (horizontal != 0)
 			vertical = 0;
-#endif
+#else
 
 		if(Input.touchCount > 0)
 		{
@@ -72,7 +72,7 @@ public class Player : MovingObject {
 					vertical = y > 0 ? 1 : -1;
 			}
 		}
-
+#endif
 		if (horizontal != 0 || vertical != 0)
 			AttemptMove<Wall> (horizontal, vertical);
 

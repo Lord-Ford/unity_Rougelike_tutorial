@@ -7,7 +7,7 @@
       <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Loader.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MovingObject.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player.cs" Line="47" Column="17" />
+      <File FileName="Assets\Scripts\Player.cs" Line="65" Column="25" />
       <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SoundManager.cs" Line="1" Column="1" />
     </Files>

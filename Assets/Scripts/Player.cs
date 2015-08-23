@@ -50,7 +50,8 @@ public class Player : MovingObject {
 
 		if (horizontal != 0)
 			vertical = 0;
-#else
+#endif
+
 		if(Input.touchCount > 0)
 		{
 			Touch myTouch = Input.touches[0];
@@ -61,7 +62,7 @@ public class Player : MovingObject {
 			}else if(myTouch.phase == TouchPhase.Ended && touchOragin.x >= 0)
 			{
 				Vector2 touchEnd = myTouch.position;
-				float x = touchEnd - touchOragin.x;
+				float x = touchEnd.x - touchOragin.x;
 				float y = touchEnd.y - touchOragin.y;
 				touchOragin.x = -1;
 				if(Mathf.Abs (x) > Mathf.Abs (y))
@@ -71,7 +72,7 @@ public class Player : MovingObject {
 					vertical = y > 0 ? 1 : -1;
 			}
 		}
-#endif
+
 		if (horizontal != 0 || vertical != 0)
 			AttemptMove<Wall> (horizontal, vertical);
 
